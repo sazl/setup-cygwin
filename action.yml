@@ -73,6 +73,7 @@ runs:
         if ($pkg_list.Count -gt 0) {
             & $choco install $pkg_list -y --no-progress --source=cygwin
         }
+        cat C:\ProgramData\chocolatey\logs\chocolatey.log
       shell: pwsh
 
     - run: |
